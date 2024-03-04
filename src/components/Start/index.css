@@ -1,0 +1,10 @@
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start > h2 {
+    font-size: 5rem;
+    color: #000;
+}
