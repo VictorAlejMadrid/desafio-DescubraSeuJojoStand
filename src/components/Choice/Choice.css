@@ -3,20 +3,25 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 2rem;
+    margin: 1rem;
     border-radius: 20px;
     padding: 1rem;
 }
 
 .choice > input {
-    width: 230px;
+    width: 130px;
     border-radius: 2rem;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem;
 }
 
+.choice > input:hover {
+    transform: scale(110%);
+    transition: transform ease 200ms;
+}
+
 .choice > label {
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
     color: #fff;
 }

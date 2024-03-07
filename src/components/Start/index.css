@@ -2,9 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin: 1.5rem;
 }
 
 .start > h2 {
-    font-size: 5rem;
-    color: #000;
+    font-size: 4rem;
+    color: #f1f1f1;
 }
