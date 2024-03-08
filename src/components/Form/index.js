@@ -38,27 +38,27 @@ const Form = (props) => {
             }
         });
 
-        if (a > b && a > c && a > d) {
-            finalConclusion[0] = "Star Platinum";
-            finalConclusion[1] = "Velocidade e precisão incríveis, com a habilidade de parar o tempo.";
-            finalConclusion[2] = "./images/stands/Star-Platinum.png";
-        } else if (b > a && b > c && b > d) {
-            finalConclusion[0] = "Silver Chariot";
-            finalConclusion[1] = "Alta agilidade e um espadachim mestre, com a habilidade de criar duplicatas de si mesmo.";
-            finalConclusion[2] = "./images/stands/Silver-Chariot.png"
-        } else if (c > a && c > b && c > d) {
-            finalConclusion[0] = "The world";
-            finalConclusion[1] = "Similar ao Star Platinum em força e velocidade, com a capacidade adicional de parar o tempo por mais tempo.";
-            finalConclusion[2] = "./images/stands/The World.png"
-        } else if (d > a && d > b && d > c) {
-            finalConclusion[0] = "Echoes";
-            finalConclusion[1] = "Pode produzir sons que afetam fisicamente o mundo ao seu redor, com diferentes atos que evoluem e ganham novas habilidades.";
-            finalConclusion[2] = "./images/stands/Echoes.png";
+        if (hasUndefined) {
+            finalConclusion[0] = 'Ainda não foi definido!';
+            finalConclusion[1] = "Feche a aba e escolha uma opção em todas as perguntas!";
+            finalConclusion[2] = "./images/stands/decepcao.png";
         } else {
-            if (hasUndefined) {
-                finalConclusion[0] = 'Ainda não foi definido!';
-                finalConclusion[1] = "Feche a aba e escolha uma opção em todas as perguntas!";
-                finalConclusion[2] = "./images/stands/decepcao.png"
+            if (a > b && a > c && a > d) {
+                finalConclusion[0] = "Star Platinum";
+                finalConclusion[1] = "Velocidade e precisão incríveis, com a habilidade de parar o tempo.";
+                finalConclusion[2] = "./images/stands/Star-Platinum.png";
+            } else if (b > a && b > c && b > d) {
+                finalConclusion[0] = "Silver Chariot";
+                finalConclusion[1] = "Alta agilidade e um espadachim mestre, com a habilidade de criar duplicatas de si mesmo.";
+                finalConclusion[2] = "./images/stands/Silver-Chariot.png";
+            } else if (c > a && c > b && c > d) {
+                finalConclusion[0] = "The world";
+                finalConclusion[1] = "Similar ao Star Platinum em força e velocidade, com a capacidade adicional de parar o tempo por mais tempo.";
+                finalConclusion[2] = "./images/stands/The World.png";
+            } else if (d > a && d > b && d > c) {
+                finalConclusion[0] = "Echoes";
+                finalConclusion[1] = "Pode produzir sons que afetam fisicamente o mundo ao seu redor, com diferentes atos que evoluem e ganham novas habilidades.";
+                finalConclusion[2] = "./images/stands/Echoes.png";
             } else {
                 finalConclusion[0] = "Crazy Diamond";
                 finalConclusion[1] = "Possui a habilidade de reparar ou restaurar objetos e seres vivos ao seu estado original.";
