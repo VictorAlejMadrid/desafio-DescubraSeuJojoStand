@@ -1,5 +1,5 @@
 import React from 'react'; // cria a arvore dos elementos no dom
-import ReactDOM from 'react-dom/client'; // transforma eles para o mobal
+import ReactDOM from 'react-dom/client'; // transforma eles para o modal
 import './index.css';
 import App from './App';
 

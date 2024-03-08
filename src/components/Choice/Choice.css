@@ -20,6 +20,10 @@
     transition: transform ease 200ms;
 }
 
+.choice > input:focus {
+    background-color: greenyellow;
+}
+
 .choice > label {
     font-size: 1.5rem;
     margin-top: 1rem;
