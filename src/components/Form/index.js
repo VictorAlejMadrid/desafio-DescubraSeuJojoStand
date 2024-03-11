@@ -87,9 +87,6 @@ const Form = ({ sendToParent, openModal }) => {
         });
     }
 
-    // Infortunately, I couldn't put the questions list in a separate file.
-    // The function used in the "atClick" prop is in this file and I couldn't find
-    // a way to use it in a separate file without many bugs appearing.
     const questions = [
         {
             title: "1. Qual sua comida favorita?",
@@ -282,10 +279,10 @@ const Form = ({ sendToParent, openModal }) => {
         <div className="questions">
             {questions.map((item) => {
                 return (
-                <div className="question">
+                <div className="question" key={item.title[0]}>
                     <h2>{item.title}</h2>
                     {item.inputs.map((question) => {
-                        return <Choice atClick={question.atClick} image={question.imagePath} label={question.label} />
+                        return <Choice atClick={question.atClick} key={question.label} image={question.imagePath} label={question.label} />
                     })}
                 </div>
                 )
