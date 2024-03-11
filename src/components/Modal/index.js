@@ -1,16 +1,16 @@
 import "./Modal.css";
 
-function Modal(props) {
+function Modal({ finalAnswer, close }) {
     function clickHandler() {
-        props.close(false);
+        close(false);
     }
 
     return (
         <div className="modal">
             <div className="card">
-                <h2>Seu stand é: <strong>{props.finalAnswer[0]}!</strong></h2>
-                <img src={props.finalAnswer[2]} />
-                <p>{props.finalAnswer[1]}</p>
+                <h2>Seu stand é: <strong>{finalAnswer.title}!</strong></h2>
+                <img src={finalAnswer.imagePath} alt="Imagem do stand final." />
+                <p>{finalAnswer.description}</p>
                 <button title="Fechar" onClick={clickHandler}> X </button>
             </div>
         </div>

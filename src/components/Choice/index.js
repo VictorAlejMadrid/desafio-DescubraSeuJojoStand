@@ -1,15 +1,15 @@
 import "./Choice.css";
 
-const Choice = (props) => {
+const Choice = ({ atClick, image, label }) => {
     const onClick = (event) => {
         event.preventDefault();
-        props.aoClicar();
+        atClick();
     };
 
     return (
         <div className="choice">
-            <input draggable="false" src={props.image} type="image" onClick={onClick}></input>
-            <label>{props.label}</label>
+            <input alt="Representação do item na label" draggable="false" src={image} type="image" onClick={onClick}></input>
+            <label>{label}</label>
         </div>
     );
 };

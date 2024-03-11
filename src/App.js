@@ -10,7 +10,6 @@ function App() {
 
   function receiveFromChild(answer) {
     setAnswer(answer);
-    console.log(answer);
   }
 
   return (
